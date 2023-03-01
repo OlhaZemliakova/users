@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    background-color: #333;
+    color: #fff;
+}
+
+.header {
+    background-color: #222;
+    font-weight: 700;
+    padding: 25px 100px;
+}
+
+main {
+    margin: 50px 100px;
+    width: 50%;
+    float: left;
+}
+
+main .user {
+    margin-bottom: 50px;
+    background-color: #3e8fa0;
+    padding: 20px;
+}
+
+main .user-action {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 10px;
+}
+
+main .delete-icon {
+    margin-right: 25px;
+    color: #165664;
+    cursor: pointer;
+    transform: scale(2);
+}
+
+main .edit-icon {
+    color: #165664;
+    cursor: pointer;
+    transform: scale(2);
+}
+
+main .delete-icon:hover,
+main .edit-icon:hover {
+    opacity: 0.5;
+}
+
+aside {
+    width: 20%;
+    margin-top: 50px;
+    margin-left: 5%;
+    float: left;
+}
+
+form input:not([type="checkbox"]),
+form textarea,
+form button {
+    width: 90%;
+    padding: 15px 5%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+    border: 0;
+    background: #222;
+    color: #fff;
+    outline: none;
+    font-size: 15px;
+}
+
+form input[type="checkbox"] {
+    margin: 10px;
+}
+
+form button {
+    cursor: pointer;
+    width: 100%;
+    transition: transform 500ms ease;
+}
+
+form button:hover {
+    transform: scale(1.1);
+}
+
+.user form {
+    margin-top: 20px;
+}
+
+.user form input,
+.user form textarea,
+.user form button {
+    background: #134b57;
+}
+
+.user button:hover {
+    transform: scale(1.01);
+}
+
+.user-information {
+    display: flex;
+    align-items: center;
+}
+
+.user-information .user-avatar {
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-right: 20px;
+}
