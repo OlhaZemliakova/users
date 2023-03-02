@@ -11,7 +11,7 @@ class App extends React.Component {
     super(props);
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     this.setState({
       users: [],
     });
